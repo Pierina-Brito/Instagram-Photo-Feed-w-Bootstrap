@@ -1,0 +1,286 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Instagram Photo Feed w/Bootstrap</title>
+</head>
+
+<body>
+        
+    <nav class="navbar navbar-light bg-light fixed-top">
+        <div class="container d-flex justify-content-between">
+            <a href="test.html" class="navbar-brand d-flex align-items-center">
+                <i class="fab fa-instagram text-secondary fa-3x"></i>
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F2%2F2a%2FInstagram_logo.svg%2F1280px-Instagram_logo.svg.png&f=1&nofb=1"
+                    with="42em" height="42em">
+            </a>
+           
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+
+                <button type="button" class="btn btn-success mx-2" data-toggle="modal" data-target="#createModalNewPost">
+                    Create a new post
+                </button>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-cog"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton">
+                        
+                        <a class="dropdown-item" href="#">Profile</a>
+                        <a class="dropdown-item" href="#">Accesibility</a>
+                        <a class="dropdown-item" href="#">Privacy and Data</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"><p class="text-danger"> Log Out </p></a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </nav>
+
+    <main class="mt-5 pt-5" role="main">
+        <div class="container-fluid">
+            <div class="nav flex-row nav-pills justify-content-center py-2" id="v-pills-tab" role="tablist"
+                aria-orientation="horizontal">
+                <a class="nav-link active bg-light mr-1" id="v-pills-grid-tab" data-toggle="pill" href="#v-pills-grid"
+                    role="tab" aria-controls="v-pills-grid" aria-selected="true">
+                    <i class="fas fa-th fa-1x text-secondary shadow-lg"></i>
+                </a>
+                <a class="nav-link bg-light" id="v-pills-cards-tab" data-toggle="pill" href="#v-pills-cards" role="tab"
+                    aria-controls="v-pills-cards" aria-selected="false">
+                    <i class="fas fa-square fa-1x text-secondary"></i>
+                </a>
+            </div>
+
+            <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-grid" role="tabpanel" aria-labelledby="v-pills-grid-tab">
+                    <div class="row">
+                        <div class="col-12 col-md-4 px-0">
+                            <div class="card">
+                                <img class="img-fit"
+                                    src="Machu-Pichu-Peru-small.jpg"
+                                    alt="Card image cap">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 px-0">
+                            <div class="card">
+                                <img class="img-fit"
+                                    src="MilkyWay-Iceland-small.jpg"
+                                    alt="Card image cap">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 px-0">
+                            <div class="card">
+                                <img class="img-fit"
+                                    src="french-polynesia-bora-bora-small.jpg"
+                                    alt="Card image cap">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-4 px-0">
+                            <div class="card">
+                                <img class="img-fit"
+                                    src="Cabo-San-Lucas-Mexico-small.jpg"
+                                    alt="Card image cap">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 px-0">
+                            <div class="card">
+                                <img class="img-fit"
+                                    src="Angel-Falls-Venezuela-s.jpg"
+                                    alt="Card image cap">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 px-0">
+                            <div class="card">
+                                <img class="img-fit"
+                                    src="El-Coliseo-small- Roma-Italia.jpg"
+                                    alt="Card image cap">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-4 px-0">
+                            <div class="card">
+                                <img class="img-fit"
+                                    src="Salar de Uyuni- Bolivia- small.jpg"
+                                    alt="Card image cap">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 px-0">
+                            <div class="card">
+                                <img class="img-fit"
+                                    src="Rayos_Maracaibo- small.jpg"
+                                    alt="Card image cap">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 px-0">
+                            <div class="card">
+                                <img class="img-fit"
+                                    src="Grand-Falls-small-Arizona.jpg"
+                                    alt="Card image cap">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 px-0">
+                            <div class="card">
+                                <img class="img-fit"
+                                    src="Cristo-Redentor-small-Brasil.jpg"
+                                    alt="Card image cap">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 px-0">
+                            <div class="card">
+                                <img class="img-fit"
+                                    src="Acropolis-Grecee -small.jpg"
+                                    alt="Card image cap">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 px-0">
+                            <div class="card">
+                                <img class="img-fit"
+                                    src="Bali.jpg"
+                                    alt="Card image cap">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="tab-pane fade" id="v-pills-cards" role="tabpanel" aria-labelledby="v-pills-cards-tab">
+                    <div class="row bg-light py-4">
+
+                        <div class="container">
+                            <div class="row justify-content-md-center">
+                                <div class="col-md-8 mx-auto pt-3">
+                                    <div class="card">
+                                        <div class="card-header bg-white d-flex justify-content-between">
+                                            <h4>Machu-Pichu -Peru</h4>
+                                            <span class="text-muted">05/22</span>
+                                        </div>
+                                        <img class="card-img-top"
+                                            src="Machu-Pichu-Peru-small.jpg"
+                                            alt="Card image cap">
+                                        <div class="card-body">
+                                            <h6 class="card-title text-dark d-flex my-1"><i class="bi bi-heart m-1"></i><i class="bi bi-chat m-1"></i><i class="bi bi-send m-1"></i><i class="bi bi-bookmark ml-auto"></i></h6>
+                                            <strong> 2.4k Likes</strong>
+                                            <p class="card-text"><p><strong>World Heritage Site</strong> is often referred to as <strong>"The Lost City of the Incas"</strong>, is one of the most familiar symbols of the Incas Empire. This Peruvian city was discovered over 100 years ago, but archaeologists are still trying to solve the mystery of its purpose.</p>
+                                            <p class="card-text"><span class="text-muted mr-2"></span><span class="text-muted">Add a comment...</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 mx-auto pt-3">
+                                    <div class="card">
+                                        <div class="card-header bg-white d-flex justify-content-between">
+                                            <h4>MilkyWay -Iceland</h4>
+                                            <span class="text-muted">04/21</span>
+                                        </div>
+                                        <img class="card-img-top" src="MilkyWay-Iceland-small.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h6 class="card-title text-dark d-flex my-1"><i class="bi bi-heart m-1"></i><i class="bi bi-chat m-1"></i><i class="bi bi-send m-1"></i><i class="bi bi-bookmark ml-auto"></i></br><strong> 5.3k Likes</strong></h6>
+                                            <p class="card-text">Due to increased amounts of light pollution, Iceland is one of the few countries left in Europe where it can still easily be seen the <strong>Milky Way</strong></p>
+                                            <p class="card-text"><span class="text-muted mr-2"></span><span class="text-muted">Add a comment...</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 mx-auto pt-3">
+                                    <div class="card">
+                                        <div class="card-header bg-white d-flex justify-content-between">
+                                            <h4>French Polynesia -Bora-Bora</h4>
+                                            <span class="text-muted">08/31</span>
+                                        </div>
+                                        <img class="card-img-top" src="french-polynesia-bora-bora-small.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h6 class="card-title text-dark d-flex my-1"><i class="bi bi-heart m-1"></i><i class="bi bi-chat m-1"></i><i class="bi bi-send m-1"></i><i class="bi bi-bookmark ml-auto"></i></br><strong> 3.6k Likes</strong></h6>
+                                            <p class="card-text"><p><strong>The Bora-Bora</strong> island is one of the most popular islands in <strong> Islands of Tahiti</strong>. One of nine islands within the Society Islands, Bora-Bora was formed over seven million years ago by a volcano.</p>
+                                            <p class="card-text"><span class="text-muted mr-2"></span><span class="text-muted">Add a comment...</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-8 mx-auto pt-3">
+                                    <div class="card">
+                                        <div class="card-header bg-white d-flex justify-content-between">
+                                            <h4>Cabo San Lucas -Mexico</h4>
+                                            <span class="text-muted">12/17</span>
+                                        </div>
+                                        <img class="card-img-top"
+                                            src="Cabo-San-Lucas-Mexico-small.jpg"
+                                            alt="Card image cap">
+                                        <div class="card-body">
+                                            <h6 class="card-title text-dark d-flex my-1"><i class="bi bi-heart m-1"></i><i class="bi bi-chat m-1"></i><i class="bi bi-send m-1"></i><i class="bi bi-bookmark ml-auto"></i></br><strong> 2.7k Likes</strong></h6>
+                                            <p class="card-text"><p><strong>Cabo San Lucas</strong> is a Mexican coastal town on the southern tip of the Baja California Sur Peninsula. This trendy vacation spot rarely disappoints. Is Known for the granite rock formations at Land's End which form a protective barrier for the bay.</p>
+                                            <p class="card-text"><span class="text-muted mr-2"></span><span class="text-muted">Add a comment...</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="createModalNewPost" tabindex="-1" role="dialog"
+        aria-labelledby="createModalNewPostTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"> Create a new post </h5>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="message-text" class="col-form-label"><h6> Caption: </h6></label>
+                        <textarea class="form-control" id="message-text" placeholder="Add the caption of your post here"></textarea>
+                    </div>                
+                    <button type="button" class="btn btn-light"><i class="fa fa-camera"></i></button>
+                    <button type="button" class="btn btn-light"><i class="bi bi-geo-alt-fill"></i></button>    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Publish</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
